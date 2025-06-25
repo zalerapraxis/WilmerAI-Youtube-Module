@@ -9,6 +9,7 @@ There's also an `obsidian_save.py` script that takes markdown-formatted text & s
 I don't know what I'm doing. Don't ask.
 
 
+Example of usage via WilmerAI workflow:
 
 https://github.com/user-attachments/assets/9499831d-ed0e-4474-a09b-d8c74f62ab58
 
