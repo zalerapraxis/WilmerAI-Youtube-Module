@@ -20,8 +20,7 @@ def Invoke(*args, **kwargs):
         formatted_content = '\n'.join(line.lstrip() for line in markdown_content.splitlines())
         
         # Determine the directory for saving the file
-        home_dir = os.path.expanduser('~')
-        summarizations_dir = os.path.join(home_dir, 'wilmerai', 'Summarizations')
+        summarizations_dir = os.getenv('SUMMARIZATIONS_DIR', os.path.join(os.getcwd(), 'Summarizations'))
         
         # Create the Summarizations directory if it doesn't exist
         os.makedirs(summarizations_dir, exist_ok=True)
